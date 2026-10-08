@@ -2,7 +2,7 @@
   "expo": {
     "name": "Inventary Dev",
     "slug": "bugdev-inventario",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon-arcade.png",
     "userInterfaceStyle": "dark",
@@ -23,14 +23,16 @@
         "android.permission.WRITE_EXTERNAL_STORAGE",
         "android.permission.SYSTEM_ALERT_WINDOW",
         "android.permission.VIBRATE"
-      ]
+      ],
+      "versionCode": 2
     },
     "web": {
       "favicon": "./assets/icon-arcade.png"
     },
     "plugins": [
       "expo-sqlite",
-      "expo-font"
+      "expo-font",
+      "./plugins/withOfflineRelease.cjs"
     ]
   }
 }

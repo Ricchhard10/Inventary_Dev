@@ -92,3 +92,7 @@ No introduzcas contraseñas, datos completos de tarjetas ni otros secretos. Cons
 ## Licencia
 
 El código del proyecto se publica con licencia MIT: puede estudiarse, copiarse, modificarse y redistribuirse conservando el aviso de licencia. Consulta [LICENSE](./LICENSE). Las fuentes y dependencias mantienen sus licencias correspondientes.
+
+## APK 1.0.1 y privacidad
+
+La distribución se recompiló conservando la firma anterior y quitando rutas personales de recursos generados. El plugin de compilación elimina el permiso de Internet del APK de distribución y normaliza rutas nativas. Para reproducir la distribución, usa Java 17, Node.js 24 y define `BUGDEV_SIGNING_FILE` con un archivo privado de propiedades de firma fuera del repositorio. Nunca compartas la llave ni sus contraseñas.
